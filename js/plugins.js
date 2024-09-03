@@ -4,7 +4,7 @@ var $plugins =
 [
 {"name":"OrangeCustomEvents","status":true,"description":"This plugin Will let you add or copy events to the current map","parameters":{}},
 {"name":"MMO_OrangeCustomEventCreator","status":true,"description":"This plugin Will let you create virtual events with script calls","parameters":{}},
-{"name":"MMO_Core","status":true,"description":"MMORPG Maker MV - Core","parameters":{"Server Location":"http://6.tcp.eu.ngrok.io:19262/"}},
+{"name":"MMO_Core","status":true,"description":"MMORPG Maker MV - Core","parameters":{"Server Location":"https://w8mkpt-89-109-47-52.ru.tuna.am"}},
 {"name":"MMO_Core_Player","status":true,"description":"MMORPG Maker MV - Core Handling Player","parameters":{"Mouse Movements":"false","Use Native Respawn":"false"}},
 {"name":"MMO_Core_Players","status":true,"description":"MMORPG Maker MV - Core Handling Players","parameters":{}},
 {"name":"MMO_Core_Party","status":true,"description":"MMORPG Maker MV - Core Handling Parties","parameters":{}},
