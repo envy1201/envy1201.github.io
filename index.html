@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Фотосессия</title>
+<style>
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.button-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.button-container button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button-container button:hover {
+  background-color: #45a049;
+}
+
+#price-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 100;
+  border-radius: 10px;
+}
+
+#price-modal img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#close-modal:hover {
+	opacity:0.8;
+}
+
+</style>
+</head>
+<body>
+
+<video id="video-background" autoplay loop muted playsinline>
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+<div class="button-container">
+  <button onclick="showPriceModal()">Прайс-лист</button>
+  <button onclick="window.location.href='#zapis';">Записаться на фотосессию</button>  
+</div>
+
+<div id="price-modal">
+  <img src="price.jpg" alt="Прайс-лист">
+  <button id="close-modal" onclick="hidePriceModal()">&times;</button>
+</div>
+
+
+<script>
+  function showPriceModal() {
+    document.getElementById('price-modal').style.display = 'block';
+  }
+
+  function hidePriceModal() {
+    document.getElementById('price-modal').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
