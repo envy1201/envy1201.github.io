@@ -81,8 +81,25 @@ body {
 }
 
 </style>
+
 </head>
 <body>
+
+  <audio id="myAudio" src="sound.mp3"></audio>
+
+  <script>
+    function playAudio() {
+      const audio = document.getElementById('myAudio');
+      audio.play().catch(error => {
+        console.error('Ошибка при воспроизведении:', error);
+      });
+    }
+  
+    // Добавление обработчика события на элемент, с которым пользователь взаимодействует
+    document.addEventListener('click', () => {
+        playAudio();
+    });
+  </script>
 
 <video id="video-background" autoplay loop muted playsinline>
   <source src="video.mp4" type="video/mp4">
@@ -90,7 +107,8 @@ body {
 
 <div class="button-container">
   <button onclick="showPriceModal()">Прайс-лист</button>
-  <button onclick="window.open('https://vk.com/shyrochekshnyrochek', '_blank');">Записаться на фотосессию</button>  
+  <button onclick="window.open('сюда ссылку', '_blank');">Записаться на фотосессию</button>  
+  <button onclick="window.location.href = 'portfolio.html';">Мои Работы</button> <!-- Добавлена кнопка "Портфолио" -->
 </div>
 
 <div id="price-modal">
