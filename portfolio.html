@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Портфолио</title>
+<style>
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #f0f0f0; /* Фон тела */
+  color: white; /* Цвет текста */
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+#portfolio-content {
+  position: relative;
+  overflow-y: auto; /* Добавляем скроллинг */
+  height: 100vh; /* Высота для скроллинга */
+  padding: 20px;
+}
+
+#portfolio-content p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+</style>
+</head>
+<body>
+
+<video id="video-background" autoplay loop muted playsinline>
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+
+<div id="portfolio-content">
+  <!-- Бесконечный текст: -->
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    ...</p>
+
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <!-- Повторите много раз  -->
+    </div>
+
+</body>
+</html>
