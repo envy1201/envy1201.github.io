@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — Печатный Дом</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-wrapper">
+                <img src="images/icon.jpg" alt="Логотип Печатный Дом" class="logo-icon">
+                <div class="logo-text">Печатный <span>Дом</span></div>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html" class="active">Каталог</a>
+                <a href="index.html#how">Как заказать</a>
+                <a href="index.html#contact">Контакты</a>
+            </nav>
+            <div class="cart-icon" id="cart-icon">
+                🛒 <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Выпадающая корзина -->
+    <div class="cart-dropdown" id="cart-dropdown">
+        <h4>Ваша корзина</h4>
+        <div id="cart-items">Корзина пуста</div>
+        <a href="#" class="btn small cart-checkout">Оформить заказ</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero hero-catalog">
+        <div class="container hero-content">
+            <h1>Каталог товаров</h1>
+            <p>Выберите категорию и загрузите своё фото — мы сделаем всё остальное.</p>
+        </div>
+    </section>
+
+    <!-- Фильтры -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="canvases">Холсты</button>
+                <button class="filter-btn" data-filter="cups">Кружки</button>
+                <button class="filter-btn" data-filter="clothes">Одежда</button>
+                <button class="filter-btn" data-filter="pillows">Подушки</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Товары -->
+    <section class="catalog-products">
+        <div class="container">
+            <div class="products-grid" id="products-container">
+                <div class="product-card" data-category="canvases">
+                    <img src="images/product4.jpg" alt="Холст 30×40">
+                    <h3>Холст 30×40 см</h3>
+                    <div class="price">1 290 ₽</div>
+                    <button class="btn small add-to-cart" data-name="Холст 30×40 см" data-price="1290">В корзину</button>
+                </div>
+                <div class="product-card" data-category="canvases">
+                    <img src="images/product5.jpg" alt="Холст 50×70">
+                    <h3>Холст 50×70 см</h3>
+                    <div class="price">2 490 ₽</div>
+                    <button class="btn small add-to-cart" data-name="Холст 50×70 см" data-price="2490">В корзину</button>
+                </div>
+                <div class="product-card" data-category="cups">
+                    <img src="images/product3.jpg" alt="Белая кружка">
+                    <h3>Кружка белая</h3>
+                    <div class="price">490 ₽</div>
+                    <button class="btn small add-to-cart" data-name="Кружка белая" data-price="490">В корзину</button>
+                </div>
+                <div class="product-card" data-category="cups">
+                    <img src="images/product6.jpg" alt="Цветная кружка">
+                    <h3>Кружка цветная</h3>
+                    <div class="price">590 ₽</div>
+                    <button class="btn small add-to-cart" data-name="Кружка цветная" data-price="590">В корзину</button>
+                </div>
+                <div class="product-card" data-category="clothes">
+                    <img src="images/product2.jpg" alt="Футболка">
+                    <h3>Футболка хлопок</h3>
+                    <div class="price">890 ₽</div>
+                    <button class="btn small add-to-cart" data-name="Футболка хлопок" data-price="890">В корзину</button>
+                </div>
+                <div class="product-card" data-category="clothes">
+                    <img src="images/product7.jpg" alt="Худи">
+                    <h3>Худи унисекс</h3>
+                    <div class="price">1 890 ₽</div>
+                    <button class="btn small add-to-cart" data-name="Худи унисекс" data-price="1890">В корзину</button>
+                </div>
+                <div class="product-card" data-category="pillows">
+                    <img src="images/product8.jpg" alt="Подушка 40×40">
+                    <h3>Подушка 40×40 см</h3>
+                    <div class="price">1 590 ₽</div>
+                    <button class="btn small add-to-cart" data-name="Подушка 40×40 см" data-price="1590">В корзину</button>
+                </div>
+                <div class="product-card" data-category="pillows">
+                    <img src="images/product1.jpg" alt="Плед">
+                    <h3>Плед с фото</h3>
+                    <div class="price">2 990 ₽</div>
+                    <button class="btn small add-to-cart" data-name="Плед с фото" data-price="2990">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Печатный Дом. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
