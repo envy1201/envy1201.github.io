@@ -216,9 +216,9 @@ img {
     background-color: #F5DEB3; 
     background-image: 
         linear-gradient(rgba(245, 222, 179, 0.5), rgba(232, 209, 165, 0.3)),
-        url('images/312.png');
+        url('images/background.png');
     background-position: center;
-     background-size: cover;
+     background-size: 110% 100%;
     background-repeat: no-repeat;
 
 }
@@ -314,7 +314,7 @@ img {
 
 /* ===== PRODUCT DETAILS ===== */
 .product-details {
-    padding: 50px 0;
+    padding: 10px 0;
     background: var(--background);
 }
 
@@ -323,9 +323,14 @@ img {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: start;
+    margin-bottom: 60px;
 }
 
-.product-image img {
+/* Уменьшаем изображения в ритуальной печати */
+.product-details-content .product-image img {
+    max-height: 700px;
+    max-width: 700px;
+    object-fit: cover;
     width: 100%;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -350,16 +355,20 @@ img {
 .size-table h3 {
     margin-bottom: 15px;
     color: var(--primary-color);
+    font-size: 1.3rem;
 }
 
 .size-table table {
     width: 100%;
     border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .size-table th,
 .size-table td {
-    padding: 12px;
+    padding: 15px 12px;
     text-align: left;
     border-bottom: 1px solid var(--border-color);
 }
@@ -368,10 +377,19 @@ img {
     background: var(--primary-color);
     color: var(--white);
     font-weight: 600;
+    font-size: 1rem;
 }
 
 .size-table tr:nth-child(even) {
-    background: var(--background);
+    background: rgba(245, 222, 179, 0.3);
+}
+
+.size-table tr:hover {
+    background: rgba(222, 184, 135, 0.2);
+}
+
+.size-table tr:last-child td {
+    border-bottom: none;
 }
 
 /* ===== FOOTER ===== */
